@@ -17,5 +17,7 @@ export default defineNuxtConfig({
 
   css: ["~/assets/css/main.scss"],
   ssr: false,
-  app: {},
+  app: {
+    baseURL: process.env.BASE_URL || "/",
+  },
 });
